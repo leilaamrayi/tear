@@ -27,7 +27,7 @@ public class RouteController {
         return ResponseEntity.status(HttpStatus.OK).body(routeList);
     }
     
-      /*  @GetMapping("traffic/")
+        @GetMapping("traffic/")
     public ResponseEntity<TrafficDetails> getGeoCooding(RestTemplate restTemplate) {
         StringBuilder builder = new StringBuilder("https://api.resrobot.se/v2.1/trip?");
         builder
@@ -41,7 +41,7 @@ public class RouteController {
 
 
         return ResponseEntity.ok(traffic.getBody());
-    }*/
+    }
     
     @PostMapping
     public ResponseEntity<List<Route>> createRoute(@RequestBody Route route) {
