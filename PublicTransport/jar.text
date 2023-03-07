@@ -23,46 +23,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.example.publictransport.PublicTransportApplicationTests
-14:15:23.895 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [PublicTransportApplicationTests]: using SpringBootContextLoader
-14:15:23.898 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.publictransport.PublicTransportApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:15:23.899 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.publictransport.PublicTransportApplicationTests]: PublicTransportApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:15:23.918 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [PublicTransportApplicationTests]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
-14:15:23.975 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\stahl\IdeaProjects\Spring\PublicTransport\target\classes\com\example\publictransport\PublicTransportApplication.class]
-14:15:23.976 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.publictransport.PublicTransportApplication for test class com.example.publictransport.PublicTransportApplicationTests
-14:15:24.069 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [PublicTransportApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
-14:15:24.070 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [PublicTransportApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.0.3)
-
-2023-03-06T14:15:24.679+01:00  INFO 14480 --- [           main] c.e.p.PublicTransportApplicationTests    : Starting PublicTransportApplicationTests using Java 19.0.1 with PID 14480 (started by stahl in C:\Users\stahl\IdeaProjects\Spring\PublicTransport)
-2023-03-06T14:15:24.680+01:00  INFO 14480 --- [           main] c.e.p.PublicTransportApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2023-03-06T14:15:24.710+01:00  INFO 14480 --- [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2023-03-06T14:15:24.710+01:00  INFO 14480 --- [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Connect Timeout Exception on Url - http://localhost:8888. Will try the next url if available
-2023-03-06T14:15:24.710+01:00  WARN 14480 --- [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@7aad3f7d uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/application/default": Connection refused: no further information
-2023-03-06T14:15:25.209+01:00  INFO 14480 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-06T14:15:25.261+01:00  INFO 14480 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
-2023-03-06T14:15:25.403+01:00  INFO 14480 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a31b7ee1-ed8c-3ed5-b454-582e7a23e84a
-2023-03-06T14:15:25.644+01:00  INFO 14480 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-06T14:15:25.686+01:00  INFO 14480 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-03-06T14:15:25.980+01:00  INFO 14480 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-06T14:15:26.136+01:00  INFO 14480 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38a38ed4
-2023-03-06T14:15:26.138+01:00  INFO 14480 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-06T14:15:26.168+01:00  WARN 14480 --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
-2023-03-06T14:15:26.172+01:00  INFO 14480 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-03-06T14:15:26.785+01:00  INFO 14480 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-06T14:15:26.793+01:00  INFO 14480 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-06T14:15:27.236+01:00  WARN 14480 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-06T14:15:27.582+01:00  INFO 14480 --- [           main] c.e.p.PublicTransportApplicationTests    : Started PublicTransportApplicationTests in 3.476 seconds (process running for 4.357)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.005 s - in com.example.publictransport.PublicTransportApplicationTests
-2023-03-06T14:15:27.794+01:00  INFO 14480 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-06T14:15:27.796+01:00  INFO 14480 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-06T14:15:27.803+01:00  INFO 14480 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 [INFO] 
 [INFO] Results:
 [INFO] 
