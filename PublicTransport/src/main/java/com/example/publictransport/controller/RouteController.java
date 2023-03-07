@@ -27,21 +27,7 @@ public class RouteController {
         return ResponseEntity.status(HttpStatus.OK).body(routeList);
     }
     
-        @GetMapping("traffic/")
-    public ResponseEntity<TrafficDetails> getGeoCooding(RestTemplate restTemplate) {
-        StringBuilder builder = new StringBuilder("https://api.resrobot.se/v2.1/trip?");
-        builder
-                .append("format=").append("json")
-                .append("&originId=").append("740000001")
-                .append("&destId=").append("740000003")
-                .append("&accessId=").append("<api.resrobot.se/v2.1/trip>");
-
-        ResponseEntity<TrafficDetails> traffic = restTemplate
-                .getForEntity(builder.toString(), TrafficDetails.class);
-
-
-        return ResponseEntity.ok(traffic.getBody());
-    }
+      
     
     @PostMapping
     public ResponseEntity<List<Route>> createRoute(@RequestBody Route route) {
